@@ -1,0 +1,43 @@
+
+
+type Query{
+get_flights(fromCity:String, toCity:String, departureDate:String):[Airline]
+
+}
+
+
+type Airline{
+	id:ID!
+	airlineName:String
+	airlineNo:String
+	departureDate:String
+	arrivalDate:String
+	fromCity:String
+	toCity:String
+	departureTime:String
+	arrivalTime:String
+	capacity:Int
+	availableSeats:Int
+	economyFare:Float
+	businessFare:Float
+}
+
+type Book{
+
+    id:ID!
+    title:String
+    description:String
+    author:String
+    price:Float
+    pages:Int
+
+
+}
+
+input BookInput{
+    title:String
+    description:String
+    author:String
+    price:Float
+    pages:Int
+}
