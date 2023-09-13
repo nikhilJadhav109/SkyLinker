@@ -56,8 +56,9 @@ public class UserServiceImpl implements IUserService {
 		if(userRepo.findByEmail(userdto.getEmail()) == null) {
 			System.out.println("Inside if" + userRepo.findByEmail(userdto.getEmail()));
 			BeanUtils.copyProperties(userdto, user);
-			user.setUserRole(Role.ADMIN);
-//			user.setUserRole(Role.MANAGER);
+			user.setUserRole(Role.CUSTOMER);
+//			user.setUserRole(Role.ADMIN); // uncomment to add admin during signup as new user and comment others
+//			user.setUserRole(Role.MANAGER); // uncomment to add manager during signup as new user and comment others
 //			Set<UserRole> roles = new HashSet<UserRole>();
 //			roles.add(new UserRole(Role.ROLE_CUSTOMER));
 //			user.setRoles(roles);
