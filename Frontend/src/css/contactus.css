@@ -1,0 +1,19 @@
+.tableContact{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top:30px;
+    border-collapse: separate;
+    border-spacing: 20px;
+    border: white;
+}
+.cardimg{
+    margin-top: 20px;
+    margin-left: 25px;
+    height: 200px;
+    max-width: 200px;
+}
+
+.contactrow{
+    background-color: lightblue;
+}
+
